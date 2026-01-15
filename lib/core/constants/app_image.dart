@@ -3,4 +3,6 @@ class AppImage {
 
   static const String profileIcon = "assets/svgs/usertag.svg";
   static const String lockIcon = "assets/svgs/lock.svg";
+  static const String googleIcon = "assets/svgs/google.svg";
+  static const String userNameIcon = "assets/svgs/user.svg";
 }

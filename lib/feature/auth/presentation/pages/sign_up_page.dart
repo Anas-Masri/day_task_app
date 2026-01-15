@@ -1,7 +1,7 @@
 import 'package:day_task_app/core/exports.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +16,15 @@ class LoginPage extends StatelessWidget {
               SpaceH(50),
               CustomText(
                 style: AppStyles.font26w600(AppColors.whiteColor),
-                text: 'Welcome Back!',
+                text: 'Create your account',
               ),
               SpaceH(23),
+              CustomInputWidget(
+                prefixIcon: AppImage.userNameIcon,
+                controller: TextEditingController(),
+                title: 'Full Name',
+              ),
+              SpaceH(27),
               CustomInputWidget(
                 prefixIcon: AppImage.profileIcon,
                 controller: TextEditingController(),
@@ -32,16 +38,10 @@ class LoginPage extends StatelessWidget {
                 controller: TextEditingController(),
                 title: 'Password',
               ),
-              SpaceH(13),
-              CustomText(
-                alignment: Alignment.topRight,
 
-                text: 'Forgot Password?',
-                style: AppStyles.font16w500(AppColors.filedTextColor),
-              ),
               SpaceH(38),
 
-              CustomButton(buttonTitle: 'Log In', width: double.infinity),
+              CustomButton(buttonTitle: 'Sign Up', width: double.infinity),
               SpaceH(38),
               CustomDividerSeperatedWidget(),
               SpaceH(38),
@@ -51,47 +51,16 @@ class LoginPage extends StatelessWidget {
               NavigateToLogInOrSignUp(
                 onTap: () {
                   Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => SignUpPage()),
+                    MaterialPageRoute(builder: (context) => LoginPage()),
                   );
                 },
-                fitstText: 'Don’t have an account? ',
-                secondText: 'Sign Up',
+                fitstText: 'Already have an account? ',
+                secondText: 'Log In',
               ),
             ],
           ),
         ),
       ),
-    );
-  }
-}
-
-class NavigateToLogInOrSignUp extends StatelessWidget {
-  const NavigateToLogInOrSignUp({
-    super.key,
-    this.onTap,
-    required this.fitstText,
-    required this.secondText,
-  });
-  final void Function()? onTap;
-  final String fitstText;
-  final String secondText;
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        CustomText(
-          text: fitstText,
-          style: AppStyles.font16w500(AppColors.filedTextColor),
-        ),
-        GestureDetector(
-          onTap: onTap,
-          child: CustomText(
-            text: secondText,
-            style: AppStyles.font16w600(AppColors.primaryColor),
-          ),
-        ),
-      ],
     );
   }
 }

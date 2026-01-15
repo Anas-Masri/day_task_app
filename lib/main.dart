@@ -1,3 +1,5 @@
+import 'package:day_task_app/feature/auth/presentation/pages/sign_up_page.dart';
+
 import 'core/exports.dart';
 
 void main() {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
           // getPages: RouteList.getPages,
           debugShowCheckedModeBanner: false,
           // initialRoute: AppRoutes.splashView,
-          home: LoginPage(),
+          home: SignUpPage(),
         );
       },
     );

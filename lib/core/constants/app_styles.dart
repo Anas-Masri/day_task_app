@@ -31,6 +31,13 @@ class AppStyles {
     color: color,
   );
 
+  static TextStyle font16w600(Color color) => TextStyle(
+    fontFamily: inter,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: color,
+  );
+
   static TextStyle font18w400(Color color) => TextStyle(
     fontFamily: inter,
     fontSize: 18,
