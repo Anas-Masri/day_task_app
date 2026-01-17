@@ -1,6 +1,6 @@
-export 'package:bloc/bloc.dart';
 export 'package:day_task_app/core/constants/app_colors.dart';
 export 'package:day_task_app/core/constants/app_image.dart';
+export 'package:day_task_app/core/constants/app_keys.dart';
 export 'package:day_task_app/core/constants/app_size.dart';
 export 'package:day_task_app/core/constants/app_styles.dart';
 export 'package:day_task_app/feature/auth/presentation/pages/login_page.dart';
@@ -12,7 +12,6 @@ export 'package:day_task_app/feature/auth/presentation/widgets/custom_text.dart'
 export 'package:day_task_app/feature/auth/presentation/widgets/custom_text_form_field.dart';
 export 'package:day_task_app/feature/auth/presentation/widgets/google_button.dart';
 export 'package:day_task_app/feature/auth/presentation/widgets/spacing.dart';
-export 'package:equatable/equatable.dart';
 export 'package:flutter/material.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:flutter_svg/flutter_svg.dart';

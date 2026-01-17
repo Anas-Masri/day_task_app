@@ -11,13 +11,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  supabase_flutter:
   cupertino_icons: ^1.0.8
   bloc: ^9.2.0
   equatable: ^2.0.8
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.2.3
-
+  dartz: ^0.10.1
+  flutter_bloc:
+  app_links: ^6.0.0 
 dev_dependencies:
   flutter_test:
     sdk: flutter
